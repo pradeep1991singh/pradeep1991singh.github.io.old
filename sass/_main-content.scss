@@ -28,7 +28,6 @@ body {
   width: $width-inner-content;
   @include box-shadow(); // mixins used
   color: $primary-color;
-  text-align: center;
   opacity: 0.95;
 
   // nesting used
