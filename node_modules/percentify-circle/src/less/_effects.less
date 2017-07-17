@@ -1,0 +1,35 @@
+// effects
+
+// hover-effects
+.hover-effects1(@width, @font-size, @width-hover, @color) {
+  cursor: pointer;
+  > span {
+    width: @width;
+    line-height: @width;
+    font-size: @font-size;
+    color: @color;
+  }
+
+  &:after {
+    top: @width-hover;
+    left: @width-hover;
+    width: 1 - (2 * @width-hover);
+    height: 1 - (2 * @width-hover);
+  }
+}
+
+.effects2(@color) {
+  > span {
+    color: @color;
+    &:before {
+      color: @color;
+    }
+  }
+}
+
+.effects3(@width) {
+  top: @width;
+  left: @width;
+  width: 1 - (2 * @width);
+  height: 1 - (2 * @width);
+}
